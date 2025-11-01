@@ -9,7 +9,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="bg-gray-800 flex flex-col lg:flex-row min-h-screen relative">
+    <div className="bg-gray-800 flex flex-col lg:flex-row min-h-screen relative lg:static">
       <Bar />
       <div className="flex-7 h-screen">
         <UpBar />
