@@ -1,6 +1,7 @@
 import {
   CategoryScale,
   Chart as ChartJS,
+  Filler,
   Legend,
   LinearScale,
   LineElement,
@@ -10,7 +11,6 @@ import {
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 
-// Chart.js 세팅
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -18,8 +18,10 @@ ChartJS.register(
   LineElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  Filler
 );
+// Chart.js v4 기준
 
 // Mock 데이터 (시간, 가격)
 const mockData = {
